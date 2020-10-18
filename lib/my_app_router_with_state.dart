@@ -78,7 +78,6 @@ class MyRouterDelegate extends RouterDelegate<MyConfiguration> with ChangeNotifi
 
   @override
   Future<void> setNewRoutePath(MyConfiguration configuration) async {
-    print('set new route ${configuration.tab}');
     _myRoute = configuration.myRoute;
     _tab = configuration.tab ?? 0;
   }
@@ -136,7 +135,7 @@ class MyHomePage extends StatelessWidget {
 
 class MyTabPage extends StatefulWidget {
   MyTabPage(this.tab): super();
-  int tab;
+  final int tab;
   @override
   MyTabPageState createState() => MyTabPageState();
 }

@@ -24,6 +24,11 @@ class MyAppState extends State<MyApp> {
 // }
 enum MyConfiguration{home, tab}
 
+
+
+
+
+
 class MyRouteInformationParser extends RouteInformationParser<MyConfiguration> {
   @override
   Future<MyConfiguration> parseRouteInformation(RouteInformation routeInformation) async {
@@ -47,6 +52,14 @@ class MyRouteInformationParser extends RouteInformationParser<MyConfiguration> {
     throw 'unknown';
   }
 }
+
+
+
+
+
+
+
+
 
 class MyRouterDelegate extends RouterDelegate<MyConfiguration> with ChangeNotifier, PopNavigatorRouterDelegateMixin<MyConfiguration>{
   @override
@@ -93,6 +106,12 @@ class MyRouterDelegate extends RouterDelegate<MyConfiguration> with ChangeNotifi
     );
   }
 }
+
+
+
+
+
+
 
 
 
