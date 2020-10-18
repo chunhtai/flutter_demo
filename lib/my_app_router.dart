@@ -42,7 +42,6 @@ class MyRouteInformationParser extends RouteInformationParser<MyConfiguration> {
 
   @override
   RouteInformation restoreRouteInformation(MyConfiguration configuration) {
-    print('restore route information $configuration');
     switch(configuration) {
       case MyConfiguration.home:
         return const RouteInformation(location: '/');
